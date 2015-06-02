@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="login">#66ffcc</color>
+    <color name="home">#ffccff</color>
+    <color name="title_bar">#3333ff</color>
+    <color name="user_name">#0000ff</color>
+    <color name="weibo_time">#ff0099</color>
+    <color name="weibo_text">#ffcccc</color>
+    <color name="green">#00ff33</color>
+    <color name="wb_item_list_bg">#d5f8f5</color>
+    <color name="share_title_text">#66ffff</color>
+
+</resources>

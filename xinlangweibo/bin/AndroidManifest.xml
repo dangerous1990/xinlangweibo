@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.limeng.xinlangweibo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+    <!-- 获得网络操作权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- android:icon="@drawable/ic_launcher" -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+
+        <!-- 欢迎页 -->
+        <activity android:name="com.limeng.xinlangweibo.WelcomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主面板 -->
+        <activity android:name=".FragmentTabs" >
+        </activity>
+        <!-- 授权 -->
+        <activity
+            android:name=".OAuthActivity"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="OAuthActivity"
+                    android:scheme="sina" />
+            </intent-filter>
+        </activity>
+        <!-- 登录页 -->
+        <activity android:name=".LoginActivity" >
+        </activity>
+        <!-- 发表微博 -->
+        <activity
+            android:name=".SendStatus"
+            android:windowSoftInputMode="adjustPan|stateVisible" >
+        </activity>
+        <!-- 发表评论 -->
+        <activity
+            android:name=".SendCommentActivity"
+            android:windowSoftInputMode="adjustPan|stateVisible" >
+        </activity>
+        <!-- 发表评论 -->
+        <activity
+            android:name=".RepostActivity"
+            android:windowSoftInputMode="adjustPan|stateVisible" >
+        </activity>
+        <!-- 显示微博详细信息 -->
+        <activity android:name=".ShowDetailStatus" >
+        </activity>
+
+        <!-- 显示关注人 列表 -->
+        <activity android:name=".ShowGFActivity" >
+        </activity>
+        <!-- 相互关注 -->
+        <activity android:name=".ShowXFActivity" >
+        </activity>
+        <!-- 我的粉丝 -->
+        <activity android:name=".ShowFFActivity" >
+        </activity>
+        <!-- 热门评论 -->
+        <activity android:name=".HotCommentStatus" >
+        </activity>
+        <!-- 个人信息 -->
+        <activity android:name=".ShowDetailUser" >
+        </activity>
+         <!-- 个人信息 -->
+        <activity android:name=".HotRepostStatus" >
+        </activity>
+        <activity android:name=".SearchUserActivity" >
+        </activity>
+        <activity android:name=".SearchUserDetail" >
+        </activity>
+         <activity android:name=".SearchStatusActivity" >
+        </activity>
+    </application>
+
+</manifest>

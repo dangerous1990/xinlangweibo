@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <include layout="@layout/activity_title_detail" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- 用户头像 -->
+
+                <ImageView
+                    android:id="@+id/detail_iv_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/usericon" />
+                <!-- 用户名称 -->
+
+                <TextView
+                    android:id="@+id/detail_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:text="用户名"
+                    android:textColor="#424d54"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <!-- 微博正文内容 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 微博正文内容 -->
+
+                <TextView
+                    android:id="@+id/detail_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+                    android:textColor="#6b717b"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/detail_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/preview_pic_loading"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <!-- 微博转发内容 -->
+
+            <LinearLayout
+                android:id="@+id/detail_redirect_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp
+        "
+                android:layout_marginTop="3dp"
+                android:background="@drawable/popup"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- 微博正文内容 -->
+
+                <TextView
+                    android:id="@+id/detail_redirect_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6b717b"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/detail_redirect_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/preview_pic_loading"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <!-- 微博转发内容 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <!-- 来源 -->
+
+                <TextView
+                    android:id="@+id/detail_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="来自:Touch Android"
+                    android:textColor="#9ba0aa"
+                    android:textSize="10dp" />
+                <!-- 发布时间 -->
+
+                <TextView
+                    android:id="@+id/detail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1小时前"
+                    android:textColor="#efa608"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/comment_progress"
+                layout="@layout/progress" />
+
+            <TextView
+                android:id="@+id/no_comments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="此微博内容暂无人评论！"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/detail_comments_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:divider="@drawable/link"
+                android:scrollbars="none"
+                android:stackFromBottom="true" 
+                android:focusable="false">
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

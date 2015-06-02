@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="15dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/smiley_happy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="   授权提示"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:text="您需要先进行授权！"
+        android:textColor="@color/red"
+        android:textSize="20dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+        
+        <Button android:id="@+id/oauth_start"
+             android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/login_btn_selector"
+        	android:layout_marginTop="10dip"
+        	android:textColor="@color/white"
+        	android:text="授  权"
+        	android:textSize="20dip"
+        	android:paddingLeft="15dp"
+        	android:paddingRight="15dp"
+        	android:paddingTop="8dp"
+        	android:paddingBottom="8dp"
+        	android:layout_centerInParent="true"/>
+        	
+        
+    </RelativeLayout>
+
+</LinearLayout>

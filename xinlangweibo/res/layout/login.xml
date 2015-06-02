@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center_vertical"
+    android:background="#ffffff">
+	
+    
+    <ImageView android:id="@+id/user_head"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:background="@drawable/angel"/>
+    
+    <TextView android:id="@+id/user_slogans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的微博，我做主！"
+        android:layout_gravity="center"
+        android:textColor="@color/red"
+        android:textSize="20dp"/>
+    
+    
+     <Spinner android:id="@+id/auto_user"
+         android:layout_marginLeft="10dip"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"/>
+     
+     <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal" >
+    
+	<Button android:id="@+id/login" android:layout_gravity="left"
+	    android:background="@drawable/login_btn_selector"
+	    android:layout_width="100dip"
+	    android:layout_height="50dip"
+	    android:textColor="@color/white"
+	    android:text="登录"
+	    android:textSize="20sp"
+	    android:layout_marginRight="20dp"/>
+	
+		<Button android:id="@+id/reset" android:layout_gravity="right"
+	    android:background="@drawable/login_btn_selector"
+	    android:layout_width="100dip"
+	    android:layout_height="50dip"
+	    android:textColor="@color/white"
+	    android:text="退出"
+	    android:textSize="20sp"
+	    android:layout_marginLeft="20dp"/>
+</LinearLayout>
+	<ImageView android:id="@+id/adduser" android:layout_gravity="right"
+	    android:layout_width="60px"
+	    android:layout_height="60px"
+	    android:background="@drawable/user_add"/>
+	    
+</LinearLayout>
